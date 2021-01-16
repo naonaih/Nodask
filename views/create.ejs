@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nodask</a>
+    </nav>
+    <form action="/create" method="post">
+        <div class="form-group col-md-4">
+            <label for="exampleTask">Task Name</label>
+            <input type="text" class="form-control" name="task" id="exampleTask" aria-describedby="taskHelp" placeholder="Enter task name">
+            <small id="taskHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="w-100"></div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</body>

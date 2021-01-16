@@ -1,0 +1,44 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nodask</a>
+
+    </nav>
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Todo</th>
+              <th scope="col">Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% contents.forEach((content) => { %>
+            <tr>
+              <td><%= content.id %></td>
+              <td><%= content.name %></td>
+              <td><%= content.created_at %></td>
+            </tr>
+            <% }) %>
+          </tbody>
+    </table>
+
+    <form action="/create" method="get">
+        <div class="text-left ">
+        <div class="text-left col-xs-3">
+            <button class="btn btn-info " type="submit">Create Task</button>
+         </div>
+    </form>
+</body>
+
+ 
